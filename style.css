@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+body{
+	background: #fff;
+	display: flex;
+}
+
+.menu{
+	width: 12%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: inset -5px 0 5px -3px rgba(0,0,0);
+	background-color: #ccc;
+	padding: 5px 0;
+	position: fixed;
+}
+
+.logo{
+	display: flex;
+	justify-items: center;
+	align-items: center;
+}
+
+.logo img{
+	width: 70px;
+}
+
+.logo h2{
+	margin-left: 10px;
+	font-size: 30px;
+}
+
+.links, .additional{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.links .item, .additional .item{
+	padding: 8px;
+	margin: 5px 0;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 50px;
+}
+
+.links .item:hover, .active, .additional .item:hover{
+	background: #aaa;
+}
+
+.links .item i, .additional .item i{
+	margin-right: 10px;
+	font-size: 24px;
+}
+
+.content{
+	margin-left: 12%;
+	width: 100%;
+	padding: 20px;
+	overflow: auto;
+}
+
+.content .separator{
+	margin: 20px 0;
+	border-bottom: 1px solid #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 800;
+}
+
+.content .separator i{
+	margin-right: 10px;
+	font-size: 24px;
+}
+
+.content p{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.content .items{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.content .items .item{
+	display: flex;
+	flex-direction: column;
+	margin: 0 20px;
+	align-items: center;
+	background-color: #ccc;
+	border-radius: 50px;
+	padding: 20px;
+	width: 30%;
+}
+
+.content .item img{
+	width: 400px;
+	height: 200px;
+	margin-right: 20px;
+	border-radius: 50px;
+	object-fit: cover;
+	object-position: center;
+}
+
+.content .item h3{
+	font-size: 22px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.content .teams{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.content .teams .team{
+	display: flex;
+	margin: 20px 7px;
+	align-items: center;
+	width: 32%;
+	background-color: #ccc;
+	border-radius: 50px;
+	padding: 10px;
+}
+
+.content .team .club, .content .matches .team, .content .transfer .team{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.content .team .club img, .content .matches .team img, .content .transfer .team img{
+	width: 80px;
+	height: 80px;
+	object-fit:contain;
+}
+
+.content .team p{
+	margin-left: 30px;
+	font-size: 20px;
+	font-weight: 800;
+}
+
+.content .matches{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.content .matches .match{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 7px;
+	width: 15%;
+	background-color: #ccc;
+	border-radius: 50px;
+	padding: 20px 30px;
+}
+
+.content .matches .match .score p{
+	font-size: 40px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.transfers {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.transfers .transfer {
+	display: flex;
+	flex-direction: column;
+	margin: 20px 7px;
+	align-items: center;
+	background-color: #ccc;
+	border-radius: 50px;
+	padding: 20px;
+	width: 30%;
+}
+
+.transfers .transfer .player {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.transfers .transfer .player img {
+	width: 150px;
+}
+
+.transfers .transfer .player h3 {
+	font-size: 22px;
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+.transfers .transfer .teams {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.transfers .transfer .teams i {
+	margin: 0 2px;
+	font-size: 64px;
+	font-weight: 800;
+}
+
+.transfers .transfer .price {
+	font-size: 22px;
+	font-weight: 800;
+}
