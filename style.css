@@ -242,3 +242,7 @@ body{
 	font-size: 22px;
 	font-weight: 800;
 }
+
+.content p a{
+	color: #aaa;
+}
