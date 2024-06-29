@@ -344,7 +344,7 @@ body{
 	border-radius: 50px;
 }
 
-.content .matches {
+.content .matches-link {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -352,7 +352,7 @@ body{
 	margin: 18% 10%;
 }
 
-.content .matches .link {
+.content .matches-link .link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -366,11 +366,11 @@ body{
 	transition: all 0.5s ease;
 }
 
-.content .matches .link:hover {
+.content .matches-link .link:hover {
 	background-color: #aaa;
 }
 
-.content .matches .link a{
+.content .matches-link .link a{
 	font-size: 24px;
 	font-weight: 800;
 	text-align: center;
@@ -464,7 +464,7 @@ body{
 		margin: 4px 4px;
 	}
 
-	.content .matches {
+	.content .matches-link {
 		margin: 18% 5%;
 	}
 
@@ -484,7 +484,7 @@ body{
 		margin-left: 35%;
 	}
 
-	.content .matches .link a{
+	.content .matches-link .link a{
 		font-size: 20px;
 	}
 
@@ -550,7 +550,7 @@ body{
 		width: 48%;
 	}
 
-	.content .matches .link {
+	.content .matches-link .link {
 		width: 88%;
 	}
 
