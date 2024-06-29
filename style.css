@@ -251,6 +251,99 @@ body{
 	color: #aaa;
 }
 
+.content .news {
+	display: none;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.content .news .article {
+	display: flex;
+	align-items: center;
+	width: 32%;
+	margin: 0 4px;
+	padding: 10px;
+	background-color: #ccc;
+	border-radius: 25px;
+}
+
+.content .news .article .left {
+	display: flex;
+	flex-direction: column;
+	margin-right: 5px;
+}
+
+.content .news .article .left h3 {
+	text-align: right;
+	font-size: 24px;
+	font-weight: 800;
+}
+
+.content .news .article .left h4 {
+	text-align: right;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.content .news .article .left p {
+	text-align: right;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.content .news .article .right {
+	display: flex;
+	flex-direction: column;
+}
+
+.content .news .article .right img {
+	width: 200px;
+	height: 160px;
+	object-fit: cover;
+	border-radius: 25px;
+}
+
+.content .news .article .right p {
+	text-align: left;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 40px;
+	background-color: #ccc;
+	border-radius: 50px;
+}
+
+.header .info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	background-color: #aaa;
+	border-radius: 50px;
+}
+
+.header .info h1 {
+	font-size: 48px;
+	margin: 40px 0;
+}
+
+.header .info p {
+	font-size: 16px;
+}
+
+.header .img img {
+	width: 700px;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 50px;
+}
+
 @media screen and (max-width: 1710px) {
 	
 	.menu .logo h2{
@@ -267,6 +360,22 @@ body{
 
 	.content .team .club h3, .content .matches .team h3, .content .transfer .team h3{
 		font-size: 16px;
+	}
+
+}
+
+@media screen and (max-width: 1610px) {
+
+	.content .news .article .left h3{
+		font-size: 20px;
+	}
+
+	.content .news .article .left h4{
+		font-size: 16px;
+	}
+
+	.content .news .article .left p, .content .news .article .right p{
+		font-size: 12px;
 	}
 
 }
@@ -312,6 +421,15 @@ body{
 	.content .transfer .team {
 		background-color: transparent;
 		width: 100px;
+	}
+
+}
+
+@media screen and (max-width: 1385px) {
+
+	.content .news .article{
+		width: 48%;
+		margin: 4px 4px;
 	}
 
 }
@@ -365,6 +483,15 @@ body{
 
 }
 
+@media screen and (max-width: 955px) {
+
+	.content .news .article{
+		width: 98%;
+		margin: 4px 4px;
+	}
+
+}
+
 @media screen and (max-width: 840px) {
 
 	.content .items .item {
@@ -401,6 +528,14 @@ body{
 
 	.content .matches .match {
 		width: 98%;
+	}
+
+	.content .news .article .left h3{
+		font-size: 18px;
+	}
+
+	.content .news .article .left h4{
+		font-size: 15px;
 	}
 
 }
