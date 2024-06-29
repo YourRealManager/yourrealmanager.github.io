@@ -344,6 +344,38 @@ body{
 	border-radius: 50px;
 }
 
+.content .matches {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin: 18% 10%;
+}
+
+.content .matches .link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px 7px;
+	width: 35%;
+	background-color: #ccc;
+	border: 5px solid #aaa;
+	border-radius: 50px;
+	padding: 40px 60px;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.content .matches .link:hover {
+	background-color: #aaa;
+}
+
+.content .matches .link a{
+	font-size: 24px;
+	font-weight: 800;
+	text-align: center;
+}
+
 @media screen and (max-width: 1710px) {
 	
 	.menu .logo h2{
@@ -432,6 +464,10 @@ body{
 		margin: 4px 4px;
 	}
 
+	.content .matches {
+		margin: 18% 5%;
+	}
+
 }
 
 @media screen and (max-width: 1250px) {
@@ -446,6 +482,10 @@ body{
 
 	.menu .additional .item:first-child a i{
 		margin-left: 35%;
+	}
+
+	.content .matches .link a{
+		font-size: 20px;
 	}
 
 }
@@ -508,6 +548,10 @@ body{
 
 	.content .matches .match {
 		width: 48%;
+	}
+
+	.content .matches .link {
+		width: 88%;
 	}
 
 }
